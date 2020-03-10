@@ -4,38 +4,38 @@
     <meta charset="utf8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
  
-    <title>10章【ハンバーガーメニューを作ってみよう】</title>
+    <title>11章【タブメニューを作ってみよう】</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css" media="all">
   </head>
   <body>
-    <h1>10章【ハンバーガーメニューを作ってみよう】</h1>
-    <div id="sp-menu">
-      <h2>Menu</h2>
-      <ul>
-        <li><a href="#">Menu1</a></li>
-        <li><a href="#">Menu2</a></li>
-        <li><a href="#">Menu3</a></li>
-        <li><a href="#">Menu4</a></li>
-        <li><a href="#">Menu5</a></li>
+    <h1>11章【タブメニューを作ってみよう】</h1>
+    <div class="wrap">
+      <ul id="tab-menu" class="clearfix">
+        <li><a href="#tab1" class="active">TAB1</a></li>
+        <li><a href="#tab2" class="">TAB2</a></li>
+        <li><a href="#tab3" class="">TAB3</a></li>
+        <li><a href="#tab4" class="">TAB4</a></li>
       </ul>
-    </div>
-    <div id="hm-icon">
-      <a class="menu-trigger" href="#">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
-    </div>
  
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+      <div id="tab-contents" class="clearfix">
+        <div id="tab1" class="tab">
+          <p>JavaScript</p>
+        </div>
+ 
+        <div id="tab2" class="tab">
+          <p>PHP</p>
+        </div>
+ 
+        <div id="tab3" class="tab">
+          <p>Python</p>
+        </div>
+ 
+        <div id="tab4" class="tab">
+          <p>Ruby</p>
+        </div>
+      </div>
+    </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
