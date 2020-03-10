@@ -1,3 +1,15 @@
 $(document).ready(function(){
-	$('body').html('<h1>Hello World</h1>');
-})
+	$('h1').html('Hello World');
+});
+
+$(function(){
+  $('.box1').show(1000,function(){
+  	$('.box1').slideDown(function(){
+  	$('.box1').css({
+  	'width': '200px;',
+  	'height': '100px;',
+  	'background-color': 'blue'
+  });
+  });
+  });
+});
