@@ -1,15 +1,11 @@
-$(document).ready(function(){
-	$('h1').html('Hello World');
-});
-
 $(function(){
-  $('.box1').show(1000,function(){
-  	$('.box1').slideDown(function(){
-  	$('.box1').css({
-  	'width': '200px;',
-  	'height': '100px;',
-  	'background-color': 'blue'
-  });
-  });
-  });
+    $('.box1').mouseover(function(){
+        $('.box1').css({'background-color': '#0000FF'});
+    });
+    $('.box1').mouseout(function(){
+        $('.box1').css({'background-color': 'red'});
+    });
+    $('.box1').mouseover(function(){
+    	$('.box1').toggleClass('box-ext')
+    });
 });
