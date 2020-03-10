@@ -1,8 +1,27 @@
 .box1 {
-	background-color: red;
-	height: 200px;
-	width: 200px;
+    background-color: #FFFFFF;
+    height: 200px;
+    width: 200px;
+    float: left;
 }
-.box-ext {
-	border: solid black 10px;
+ 
+.bg1 {
+    background-color: #FFAAAA;
+}
+ 
+.bg2 {
+    background-color: #FFBBBB;
+}
+ 
+.bg3 {
+    background-color: #FFCCCC;
+}
+ 
+.bg4 {
+    background-color: #FFDDDD;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
 }

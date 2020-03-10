@@ -1,11 +1,23 @@
 $(function(){
-    $('.box1').mouseover(function(){
-        $('.box1').css({'background-color': '#0000FF'});
+    $('.bg1').on('click', function(){
+        $(this).slideUp();
     });
-    $('.box1').mouseout(function(){
-        $('.box1').css({'background-color': 'red'});
+ 
+    $('.bg2').on('click', function(){
+        $(this).slideUp();
     });
-    $('.box1').mouseover(function(){
-    	$('.box1').toggleClass('box-ext')
+ 
+    $('.bg3').on('click', function(){
+        $('.bg3').slideUp();
+    });
+ 
+    $('.bg4').on('click', function(){
+        $('.bg4').slideUp();
+    });
+});
+
+$(function(){
+    $('button').on('click', function(){
+        $('ul').children().css('color','red');
     });
 });
